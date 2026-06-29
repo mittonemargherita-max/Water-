@@ -3,7 +3,8 @@
  *
  * - Foglio "Bagnature": Data | Tipo | Pioggia% | mm | Fatto  = memoria condivisa.
  * - aggiornaBagnature(): trigger giornaliero, scarica il meteo di Zurigo
- *   (Open-Meteo) e ricalcola le righe future, preservando le spunte "Fatto".
+ *   (modello MeteoSvizzera ICON-CH2 via Open-Meteo, ~7 giorni affidabili) e
+ *   ricalcola le righe future, preservando le spunte "Fatto".
  * - doGet(): serve la pagina condivisa (Pagina.html). ?format=ics serve il .ics.
  * - getStato()/segnaFatto(): usate dalla pagina per leggere e spuntare.
  *
@@ -16,7 +17,7 @@ var LAT = 47.3769, LON = 8.5417;       // Zurigo
 var TZ = 'Europe/Zurich';
 var SOGLIA_MM = 4.0;                   // pioggia che "conta" come bagnatura
 var GIORNI_AVANTI = 60;                // orizzonte del calendario
-var GIORNI_INDIETRO = 5;               // per agganciare le piogge recenti
+var GIORNI_INDIETRO = 3;               // per agganciare le piogge recenti
 var SHEET_NAME = 'Bagnature';
 var DAY = 86400000;
 
@@ -33,13 +34,14 @@ function foglio_() {
   return sh;
 }
 
-// --- Meteo (Open-Meteo) ------------------------------------------------------
+// --- Meteo (modello MeteoSvizzera ICON-CH2 via Open-Meteo) --------------------
 function caricaMeteo_() {
   var url = 'https://api.open-meteo.com/v1/forecast'
     + '?latitude=' + LAT + '&longitude=' + LON
     + '&daily=precipitation_sum,precipitation_probability_max'
+    + '&models=meteoswiss_icon_ch2'   // dati MeteoSvizzera, ~7 giorni affidabili
     + '&timezone=' + encodeURIComponent(TZ)
-    + '&past_days=' + GIORNI_INDIETRO + '&forecast_days=16';
+    + '&past_days=' + GIORNI_INDIETRO + '&forecast_days=7';
   try {
     var resp = UrlFetchApp.fetch(url, { muteHttpExceptions: true });
     var d = JSON.parse(resp.getContentText()).daily;

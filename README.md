@@ -9,7 +9,9 @@ Sistema per organizzare le bagnature in base al meteo reale di Zurigo.
 - Se è prevista **pioggia** (≥ 4 mm) le piante all'aperto vanno in **riposo**.
 - Mostra sempre la **probabilità di pioggia** prevista.
 
-Meteo: [Open-Meteo](https://open-meteo.com) (gratis, senza chiavi).
+Meteo: modello **MeteoSvizzera** (ICON-CH2) via [Open-Meteo](https://open-meteo.com)
+(gratis, senza chiavi). Affidabile ~7 giorni; i giorni oltre la finestra sono
+segnati in grigio nella pagina.
 
 ## Sistema attivo: pagina condivisa (Google) — consigliato
 Cartella **`apps-script/`**: una pagina web condivisibile dove **chiunque** col
