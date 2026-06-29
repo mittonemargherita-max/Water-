@@ -1,0 +1,1587 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//orto-bagnature//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bagnature Orto
+X-WR-TIMEZONE:Europe/Zurich
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2026-06-29-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260629T090000
+DTEND;TZID=Europe/Zurich:20260629T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 83%\, ~1.1 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-29-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260629T090000
+DTEND;TZID=Europe/Zurich:20260629T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 83%\, ~1.1 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-30-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260630T090000
+DTEND;TZID=Europe/Zurich:20260630T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 60%\, ~13.9 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-06-30-allapertoriposopiove@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260630T090000
+DTEND;TZID=Europe/Zurich:20260630T093000
+SUMMARY:All'aperto: RIPOSO (piove)
+DESCRIPTION:Orto e terrazza di Patricio bagnati dalla pioggia.\nMeteo: probabilità pioggia 60%\, ~13.9 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:All'aperto: RIPOSO (piove)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-01-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260701T090000
+DTEND;TZID=Europe/Zurich:20260701T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 93%\, ~0.4 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-02-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260702T090000
+DTEND;TZID=Europe/Zurich:20260702T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 12%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-02-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260702T090000
+DTEND;TZID=Europe/Zurich:20260702T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 12%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-03-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260703T090000
+DTEND;TZID=Europe/Zurich:20260703T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 10%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-03-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260703T090000
+DTEND;TZID=Europe/Zurich:20260703T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 10%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-04-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260704T090000
+DTEND;TZID=Europe/Zurich:20260704T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 2%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-04-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260704T090000
+DTEND;TZID=Europe/Zurich:20260704T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 2%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-05-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260705T090000
+DTEND;TZID=Europe/Zurich:20260705T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 4%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-05-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260705T090000
+DTEND;TZID=Europe/Zurich:20260705T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 4%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-06-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260706T090000
+DTEND;TZID=Europe/Zurich:20260706T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 7%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-06-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260706T090000
+DTEND;TZID=Europe/Zurich:20260706T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 7%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-07-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260707T090000
+DTEND;TZID=Europe/Zurich:20260707T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 6%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-07-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260707T090000
+DTEND;TZID=Europe/Zurich:20260707T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 6%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-08-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260708T090000
+DTEND;TZID=Europe/Zurich:20260708T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 5%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-08-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260708T090000
+DTEND;TZID=Europe/Zurich:20260708T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 5%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-09-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260709T090000
+DTEND;TZID=Europe/Zurich:20260709T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 18%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-09-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260709T090000
+DTEND;TZID=Europe/Zurich:20260709T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 18%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-10-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260710T090000
+DTEND;TZID=Europe/Zurich:20260710T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 12%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-10-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260710T090000
+DTEND;TZID=Europe/Zurich:20260710T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 12%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-11-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260711T090000
+DTEND;TZID=Europe/Zurich:20260711T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 18%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-11-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260711T090000
+DTEND;TZID=Europe/Zurich:20260711T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 18%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-12-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260712T090000
+DTEND;TZID=Europe/Zurich:20260712T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 24%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-12-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260712T090000
+DTEND;TZID=Europe/Zurich:20260712T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 24%\, ~0.0 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-13-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260713T090000
+DTEND;TZID=Europe/Zurich:20260713T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia 31%\, ~1.2 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-13-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260713T090000
+DTEND;TZID=Europe/Zurich:20260713T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia 31%\, ~1.2 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-14-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260714T090000
+DTEND;TZID=Europe/Zurich:20260714T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: probabilità pioggia n/d\, ~1.4 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-14-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260714T090000
+DTEND;TZID=Europe/Zurich:20260714T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: probabilità pioggia n/d\, ~1.4 mm previsti.
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-15-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260715T090000
+DTEND;TZID=Europe/Zurich:20260715T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-15-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260715T090000
+DTEND;TZID=Europe/Zurich:20260715T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-16-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260716T090000
+DTEND;TZID=Europe/Zurich:20260716T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-16-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260716T090000
+DTEND;TZID=Europe/Zurich:20260716T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-17-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260717T090000
+DTEND;TZID=Europe/Zurich:20260717T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-17-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260717T090000
+DTEND;TZID=Europe/Zurich:20260717T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-18-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260718T090000
+DTEND;TZID=Europe/Zurich:20260718T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-18-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260718T090000
+DTEND;TZID=Europe/Zurich:20260718T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-19-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260719T090000
+DTEND;TZID=Europe/Zurich:20260719T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-19-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260719T090000
+DTEND;TZID=Europe/Zurich:20260719T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-20-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260720T090000
+DTEND;TZID=Europe/Zurich:20260720T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-20-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260720T090000
+DTEND;TZID=Europe/Zurich:20260720T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-21-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260721T090000
+DTEND;TZID=Europe/Zurich:20260721T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-21-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260721T090000
+DTEND;TZID=Europe/Zurich:20260721T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-22-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260722T090000
+DTEND;TZID=Europe/Zurich:20260722T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-22-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260722T090000
+DTEND;TZID=Europe/Zurich:20260722T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-23-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260723T090000
+DTEND;TZID=Europe/Zurich:20260723T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-23-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260723T090000
+DTEND;TZID=Europe/Zurich:20260723T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-24-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260724T090000
+DTEND;TZID=Europe/Zurich:20260724T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-24-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260724T090000
+DTEND;TZID=Europe/Zurich:20260724T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-25-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260725T090000
+DTEND;TZID=Europe/Zurich:20260725T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-25-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260725T090000
+DTEND;TZID=Europe/Zurich:20260725T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-26-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260726T090000
+DTEND;TZID=Europe/Zurich:20260726T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-26-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260726T090000
+DTEND;TZID=Europe/Zurich:20260726T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-27-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260727T090000
+DTEND;TZID=Europe/Zurich:20260727T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-27-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260727T090000
+DTEND;TZID=Europe/Zurich:20260727T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-28-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260728T090000
+DTEND;TZID=Europe/Zurich:20260728T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-28-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260728T090000
+DTEND;TZID=Europe/Zurich:20260728T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-29-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260729T090000
+DTEND;TZID=Europe/Zurich:20260729T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-29-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260729T090000
+DTEND;TZID=Europe/Zurich:20260729T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-30-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260730T090000
+DTEND;TZID=Europe/Zurich:20260730T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-30-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260730T090000
+DTEND;TZID=Europe/Zurich:20260730T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-31-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260731T090000
+DTEND;TZID=Europe/Zurich:20260731T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-07-31-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260731T090000
+DTEND;TZID=Europe/Zurich:20260731T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-01-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260801T090000
+DTEND;TZID=Europe/Zurich:20260801T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-02-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260802T090000
+DTEND;TZID=Europe/Zurich:20260802T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-02-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260802T090000
+DTEND;TZID=Europe/Zurich:20260802T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-03-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260803T090000
+DTEND;TZID=Europe/Zurich:20260803T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-03-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260803T090000
+DTEND;TZID=Europe/Zurich:20260803T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-04-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260804T090000
+DTEND;TZID=Europe/Zurich:20260804T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-04-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260804T090000
+DTEND;TZID=Europe/Zurich:20260804T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-05-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260805T090000
+DTEND;TZID=Europe/Zurich:20260805T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-05-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260805T090000
+DTEND;TZID=Europe/Zurich:20260805T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-06-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260806T090000
+DTEND;TZID=Europe/Zurich:20260806T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-06-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260806T090000
+DTEND;TZID=Europe/Zurich:20260806T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-07-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260807T090000
+DTEND;TZID=Europe/Zurich:20260807T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-07-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260807T090000
+DTEND;TZID=Europe/Zurich:20260807T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-08-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260808T090000
+DTEND;TZID=Europe/Zurich:20260808T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-08-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260808T090000
+DTEND;TZID=Europe/Zurich:20260808T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-09-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260809T090000
+DTEND;TZID=Europe/Zurich:20260809T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-09-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260809T090000
+DTEND;TZID=Europe/Zurich:20260809T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-10-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260810T090000
+DTEND;TZID=Europe/Zurich:20260810T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-10-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260810T090000
+DTEND;TZID=Europe/Zurich:20260810T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-11-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260811T090000
+DTEND;TZID=Europe/Zurich:20260811T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-11-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260811T090000
+DTEND;TZID=Europe/Zurich:20260811T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-12-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260812T090000
+DTEND;TZID=Europe/Zurich:20260812T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-12-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260812T090000
+DTEND;TZID=Europe/Zurich:20260812T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-13-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260813T090000
+DTEND;TZID=Europe/Zurich:20260813T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-13-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260813T090000
+DTEND;TZID=Europe/Zurich:20260813T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-14-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260814T090000
+DTEND;TZID=Europe/Zurich:20260814T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-14-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260814T090000
+DTEND;TZID=Europe/Zurich:20260814T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-15-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260815T090000
+DTEND;TZID=Europe/Zurich:20260815T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-15-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260815T090000
+DTEND;TZID=Europe/Zurich:20260815T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-16-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260816T090000
+DTEND;TZID=Europe/Zurich:20260816T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-16-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260816T090000
+DTEND;TZID=Europe/Zurich:20260816T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-17-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260817T090000
+DTEND;TZID=Europe/Zurich:20260817T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-17-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260817T090000
+DTEND;TZID=Europe/Zurich:20260817T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-18-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260818T090000
+DTEND;TZID=Europe/Zurich:20260818T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-18-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260818T090000
+DTEND;TZID=Europe/Zurich:20260818T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-19-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260819T090000
+DTEND;TZID=Europe/Zurich:20260819T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-19-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260819T090000
+DTEND;TZID=Europe/Zurich:20260819T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-20-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260820T090000
+DTEND;TZID=Europe/Zurich:20260820T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-20-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260820T090000
+DTEND;TZID=Europe/Zurich:20260820T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-21-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260821T090000
+DTEND;TZID=Europe/Zurich:20260821T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-21-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260821T090000
+DTEND;TZID=Europe/Zurich:20260821T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-22-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260822T090000
+DTEND;TZID=Europe/Zurich:20260822T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-22-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260822T090000
+DTEND;TZID=Europe/Zurich:20260822T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-23-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260823T090000
+DTEND;TZID=Europe/Zurich:20260823T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-23-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260823T090000
+DTEND;TZID=Europe/Zurich:20260823T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-24-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260824T090000
+DTEND;TZID=Europe/Zurich:20260824T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-24-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260824T090000
+DTEND;TZID=Europe/Zurich:20260824T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-25-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260825T090000
+DTEND;TZID=Europe/Zurich:20260825T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-25-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260825T090000
+DTEND;TZID=Europe/Zurich:20260825T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-26-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260826T090000
+DTEND;TZID=Europe/Zurich:20260826T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-26-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260826T090000
+DTEND;TZID=Europe/Zurich:20260826T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-27-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260827T090000
+DTEND;TZID=Europe/Zurich:20260827T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-27-bagnaterrazzadipatricio@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260827T090000
+DTEND;TZID=Europe/Zurich:20260827T093000
+SUMMARY:Bagna Terrazza di PATRICIO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna Terrazza di PATRICIO
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-28-bagnapianteincasa@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260828T090000
+DTEND;TZID=Europe/Zurich:20260828T093000
+SUMMARY:Bagna piante in CASA
+DESCRIPTION:Tutti i giorni (non esposte alla pioggia).\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna piante in CASA
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-28-bagnaorto@orto-bagnature
+DTSTAMP:20260629T144124Z
+DTSTART;TZID=Europe/Zurich:20260828T090000
+DTEND;TZID=Europe/Zurich:20260828T093000
+SUMMARY:Bagna ORTO
+DESCRIPTION:Un giorno sì e uno no.\nMeteo: oltre la finestra di previsione (ipotesi: assenza di pioggia).
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0M
+DESCRIPTION:Bagna ORTO
+END:VALARM
+END:VEVENT
+END:VCALENDAR
