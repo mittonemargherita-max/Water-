@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <style>
+    :root { --verde: #2e7d32; --grigio: #f2f2f2; --bordo: #ddd; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, Roboto, Arial, sans-serif; margin: 0;
+           background: #fafafa; color: #222; }
+    header { background: var(--verde); color: #fff; padding: 16px; }
+    header h1 { margin: 0; font-size: 20px; }
+    header .data { font-size: 13px; opacity: .9; margin-top: 2px; }
+    main { padding: 14px; max-width: 560px; margin: 0 auto; }
+    h2 { font-size: 15px; color: #555; margin: 18px 0 8px; text-transform: uppercase;
+         letter-spacing: .5px; }
+    .card { background: #fff; border: 1px solid var(--bordo); border-radius: 12px;
+            padding: 14px; margin-bottom: 10px; display: flex; align-items: center;
+            justify-content: space-between; gap: 12px; }
+    .card.fatto { background: #e8f5e9; border-color: #a5d6a7; }
+    .card .info { min-width: 0; }
+    .card .titolo { font-size: 17px; font-weight: 600; }
+    .card .meteo { font-size: 13px; color: #777; margin-top: 2px; }
+    button { border: none; border-radius: 10px; padding: 12px 16px; font-size: 15px;
+             font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .btn-fai { background: var(--verde); color: #fff; }
+    .btn-annulla { background: #fff; color: var(--verde); border: 1px solid var(--verde); }
+    .riposo { background: #e3f2fd; border-color: #90caf9; }
+    .riposo .titolo { color: #1565c0; }
+    .prossimi .riga { display: flex; justify-content: space-between; padding: 9px 4px;
+                      border-bottom: 1px solid #eee; font-size: 14px; }
+    .prossimi .riga:last-child { border-bottom: none; }
+    .prossimi .g { color: #333; font-weight: 600; text-transform: capitalize; }
+    .prossimi .t { color: #666; }
+    .nota { font-size: 12px; color: #999; margin-top: 10px; text-align: center; }
+    #loader { text-align: center; color: #999; padding: 30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bagnature Orto</h1>
+    <div class="data" id="oggidata"></div>
+  </header>
+  <main>
+    <div id="loader">Carico…</div>
+    <div id="contenuto" style="display:none">
+      <h2>Oggi</h2>
+      <div id="oggi"></div>
+      <h2>Prossimi giorni</h2>
+      <div class="card prossimi" id="prossimi"></div>
+      <div class="nota">Le piante in casa vanno bagnate ogni giorno. La pagina si
+        aggiorna da sola.</div>
+    </div>
+  </main>
+
+  <script>
+    var NOMI = {
+      Casa: 'Piante in casa', Orto: 'Orto',
+      Patricio: 'Terrazza di Patricio', Riposo: "All'aperto: riposo (piove)"
+    };
+    var GIORNI = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'];
+
+    function carica() {
+      google.script.run.withSuccessHandler(render).getStato();
+    }
+
+    function render(s) {
+      document.getElementById('loader').style.display = 'none';
+      document.getElementById('contenuto').style.display = 'block';
+      document.getElementById('oggidata').textContent = formatLungo(s.today);
+
+      var o = document.getElementById('oggi');
+      o.innerHTML = '';
+      s.oggi.forEach(function (v) { o.appendChild(cardOggi(v, s.today)); });
+
+      var p = document.getElementById('prossimi');
+      p.innerHTML = '';
+      s.prossimi.forEach(function (g) {
+        var fuori = g.voci.filter(function (v) { return v.tipo !== 'Casa'; });
+        var et = fuori.length ? fuori.map(function (v) { return NOMI[v.tipo]; }).join(', ')
+                              : 'solo casa';
+        var prob = fuori.length && fuori[0].prob !== '' ? ' · pioggia ' + fuori[0].prob + '%' : '';
+        var r = document.createElement('div');
+        r.className = 'riga';
+        r.innerHTML = '<span class="g">' + formatBreve(g.data) + '</span>' +
+                      '<span class="t">' + et + prob + '</span>';
+        p.appendChild(r);
+      });
+    }
+
+    function cardOggi(v, today) {
+      var d = document.createElement('div');
+      var riposo = v.tipo === 'Riposo';
+      d.className = 'card' + (v.fatto ? ' fatto' : '') + (riposo ? ' riposo' : '');
+      var meteo = v.prob === '' ? '' : 'Probabilità pioggia ' + v.prob + '%';
+      var info = document.createElement('div');
+      info.className = 'info';
+      info.innerHTML = '<div class="titolo">' + NOMI[v.tipo] + '</div>' +
+                       (meteo ? '<div class="meteo">' + meteo + '</div>' : '');
+      d.appendChild(info);
+
+      if (!riposo) {
+        var b = document.createElement('button');
+        b.className = v.fatto ? 'btn-annulla' : 'btn-fai';
+        b.textContent = v.fatto ? 'Annulla' : 'Fatto';
+        b.onclick = function () {
+          b.disabled = true; b.textContent = '…';
+          google.script.run.withSuccessHandler(function () { carica(); })
+            .segnaFatto(today, v.tipo, !v.fatto);
+        };
+        d.appendChild(b);
+      }
+      return d;
+    }
+
+    function formatLungo(iso) {
+      var p = iso.split('-');
+      return formatBreve(iso) + ' ' + p[2] + '/' + p[1] + '/' + p[0];
+    }
+    function formatBreve(iso) {
+      var d = new Date(Date.parse(iso));
+      return GIORNI[d.getUTCDay()] + ' ' + iso.slice(8, 10) + '/' + iso.slice(5, 7);
+    }
+
+    carica();
+    setInterval(carica, 30000); // presa diretta: ricarica ogni 30s
+  </script>
+</body>
+</html>

@@ -1,11 +1,9 @@
 name: Aggiorna calendario bagnature
 
+# DISATTIVATO: il sistema attivo e' ora Google Apps Script (cartella apps-script/).
+# Questo workflow resta solo avviabile a mano, come backup del .ics su GitHub.
 on:
-  schedule:
-    - cron: "0 4 * * *"   # ogni giorno ~06:00 ora di Zurigo
-  workflow_dispatch:        # avvio manuale dal sito GitHub
-  push:
-    branches: [main]
+  workflow_dispatch:        # solo avvio manuale dal sito GitHub
 
 permissions:
   contents: write

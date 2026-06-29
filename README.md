@@ -1,17 +1,25 @@
-# Calendario bagnature orto (Zurigo)
+# Bagnature orto (Zurigo)
 
-Calendario `.ics` che si aggiorna **da solo ogni giorno** con il meteo reale di
-Zurigo. Ti abboni una volta dal telefono e ricevi i promemoria.
+Sistema per organizzare le bagnature in base al meteo reale di Zurigo.
 
 ## Cosa fa
-- **Casa** (piante interne): promemoria **ogni giorno**.
+- **Casa** (piante interne): **ogni giorno**.
 - **Orto** e **terrazza di Patricio**: un giorno sì e uno no, **alternati**
   (Patricio i giorni dispari, Orto i pari) così vai in un solo posto al giorno.
 - Se è prevista **pioggia** (≥ 4 mm) le piante all'aperto vanno in **riposo**.
-- Ogni evento mostra la **probabilità di pioggia** prevista.
+- Mostra sempre la **probabilità di pioggia** prevista.
 
 Meteo: [Open-Meteo](https://open-meteo.com) (gratis, senza chiavi).
-Aggiornamento: ogni mattina via GitHub Actions.
+
+## Sistema attivo: pagina condivisa (Google) — consigliato
+Cartella **`apps-script/`**: una pagina web condivisibile dove **chiunque** col
+link può segnare "fatto" e tutti vedono lo stato **in tempo reale**. Si aggiorna
+da sola ogni mattina col meteo. Istruzioni in **`apps-script/SETUP.md`**.
+
+## Backup: calendario .ics (GitHub)
+La parte sotto (`generate.py` + GitHub Action) genera un calendario `.ics` di
+sola lettura. La Action automatica è **disattivata** (resta avviabile a mano):
+il sistema principale è ora quello Google qui sopra.
 
 ## Come pubblicarlo (una volta sola)
 1. Crea un repository **pubblico** su GitHub, es. `orto-bagnature`.
