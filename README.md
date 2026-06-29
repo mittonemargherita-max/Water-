@@ -25,7 +25,7 @@ Aggiornamento: ogni mattina via GitHub Actions.
 Il link del calendario è:
 
 ```
-https://raw.githubusercontent.com/<TUO-UTENTE>/orto-bagnature/main/bagnature.ics
+https://raw.githubusercontent.com/mittonemargherita-max/Water-/main/bagnature.ics
 ```
 
 ### iPhone
