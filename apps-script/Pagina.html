@@ -4,126 +4,222 @@
   <base target="_top">
   <meta charset="utf-8">
   <style>
-    :root { --verde: #2e7d32; --grigio: #f2f2f2; --bordo: #ddd; }
+    :root {
+      --orto: #2e7d32; --orto-bg: #e8f5e9;
+      --patr: #c2185b; --patr-bg: #fce4ec;
+      --casa: #0277bd; --casa-bg: #e1f5fe;
+      --rip:  #1565c0; --rip-bg:  #e3f2fd;
+      --bordo: #e0e0e0;
+    }
     * { box-sizing: border-box; }
     body { font-family: -apple-system, Roboto, Arial, sans-serif; margin: 0;
            background: #fafafa; color: #222; }
-    header { background: var(--verde); color: #fff; padding: 16px; }
-    header h1 { margin: 0; font-size: 20px; }
-    header .data { font-size: 13px; opacity: .9; margin-top: 2px; }
-    main { padding: 14px; max-width: 560px; margin: 0 auto; }
-    h2 { font-size: 15px; color: #555; margin: 18px 0 8px; text-transform: uppercase;
-         letter-spacing: .5px; }
-    .card { background: #fff; border: 1px solid var(--bordo); border-radius: 12px;
-            padding: 14px; margin-bottom: 10px; display: flex; align-items: center;
-            justify-content: space-between; gap: 12px; }
-    .card.fatto { background: #e8f5e9; border-color: #a5d6a7; }
-    .card .info { min-width: 0; }
-    .card .titolo { font-size: 17px; font-weight: 600; }
-    .card .meteo { font-size: 13px; color: #777; margin-top: 2px; }
-    button { border: none; border-radius: 10px; padding: 12px 16px; font-size: 15px;
-             font-weight: 600; cursor: pointer; white-space: nowrap; }
-    .btn-fai { background: var(--verde); color: #fff; }
-    .btn-annulla { background: #fff; color: var(--verde); border: 1px solid var(--verde); }
-    .riposo { background: #e3f2fd; border-color: #90caf9; }
-    .riposo .titolo { color: #1565c0; }
-    .prossimi .riga { display: flex; justify-content: space-between; padding: 9px 4px;
-                      border-bottom: 1px solid #eee; font-size: 14px; }
-    .prossimi .riga:last-child { border-bottom: none; }
-    .prossimi .g { color: #333; font-weight: 600; text-transform: capitalize; }
-    .prossimi .t { color: #666; }
-    .nota { font-size: 12px; color: #999; margin-top: 10px; text-align: center; }
+    header { background: var(--orto); color: #fff; padding: 14px 16px; }
+    header h1 { margin: 0; font-size: 18px; }
+    main { max-width: 640px; margin: 0 auto; padding: 10px; }
+
+    .mese { display: flex; align-items: center; justify-content: space-between;
+            padding: 6px 4px; }
+    .mese .nome { font-size: 17px; font-weight: 700; text-transform: capitalize; }
+    .mese button { border: 1px solid var(--bordo); background: #fff; border-radius: 8px;
+                   width: 40px; height: 36px; font-size: 18px; cursor: pointer; }
+    .mese button:disabled { opacity: .3; cursor: default; }
+
+    .settimana, .griglia { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .settimana { margin: 4px 0; }
+    .settimana div { text-align: center; font-size: 11px; color: #888; font-weight: 600; }
+
+    .cella { background: #fff; border: 1px solid var(--bordo); border-radius: 8px;
+             min-height: 64px; padding: 4px; font-size: 12px; cursor: pointer;
+             display: flex; flex-direction: column; }
+    .cella.vuota { background: transparent; border: none; cursor: default; }
+    .cella.fuori { background: #f7f7f7; color: #bbb; cursor: default; }
+    .cella.oggi { border: 2px solid var(--orto); }
+    .cella .num { font-weight: 700; font-size: 13px; }
+    .cella.sel { box-shadow: 0 0 0 2px var(--orto) inset; }
+    .chip { margin-top: auto; border-radius: 6px; padding: 2px 4px; font-size: 11px;
+            font-weight: 600; line-height: 1.2; }
+    .chip.orto { background: var(--orto-bg); color: var(--orto); }
+    .chip.patr { background: var(--patr-bg); color: var(--patr); }
+    .chip.rip  { background: var(--rip-bg);  color: var(--rip); }
+    .pioggia { font-size: 10px; color: #999; }
+    .dots { display: flex; gap: 3px; margin-top: 2px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; }
+    .dot.casa { background: var(--casa); }
+    .dot.off { background: #ddd; }
+    .fattoseg { color: var(--orto); font-weight: 700; }
+
+    .dettaglio { background: #fff; border: 1px solid var(--bordo); border-radius: 12px;
+                 padding: 12px; margin-top: 12px; }
+    .dettaglio h3 { margin: 0 0 10px; font-size: 15px; text-transform: capitalize; }
+    .voce { display: flex; align-items: center; justify-content: space-between;
+            gap: 10px; padding: 10px; border-radius: 10px; margin-bottom: 8px; }
+    .voce.orto { background: var(--orto-bg); }
+    .voce.patr { background: var(--patr-bg); }
+    .voce.casa { background: var(--casa-bg); }
+    .voce.rip  { background: var(--rip-bg); }
+    .voce .t { font-weight: 600; }
+    .voce .m { font-size: 12px; color: #666; }
+    .voce button { border: none; border-radius: 9px; padding: 10px 14px; font-size: 14px;
+                   font-weight: 600; cursor: pointer; white-space: nowrap; color: #fff; }
+    .voce.casa button { background: var(--casa); }
+    .voce.orto button { background: var(--orto); }
+    .voce.patr button { background: var(--patr); }
+    .voce button.annulla { background: #fff; color: #555; border: 1px solid #bbb; }
+
+    .legenda { font-size: 12px; color: #777; margin-top: 12px; text-align: center; }
+    .legenda span { display: inline-block; margin: 0 6px; }
+    .legenda i { display: inline-block; width: 10px; height: 10px; border-radius: 3px;
+                 vertical-align: middle; margin-right: 3px; }
     #loader { text-align: center; color: #999; padding: 30px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Bagnature Orto</h1>
-    <div class="data" id="oggidata"></div>
-  </header>
+  <header><h1>Bagnature Orto</h1></header>
   <main>
     <div id="loader">Carico…</div>
-    <div id="contenuto" style="display:none">
-      <h2>Oggi</h2>
-      <div id="oggi"></div>
-      <h2>Prossimi giorni</h2>
-      <div class="card prossimi" id="prossimi"></div>
-      <div class="nota">Le piante in casa vanno bagnate ogni giorno. La pagina si
-        aggiorna da sola.</div>
+    <div id="app" style="display:none">
+      <div class="mese">
+        <button id="prev">‹</button>
+        <div class="nome" id="nomemese"></div>
+        <button id="next">›</button>
+      </div>
+      <div class="settimana">
+        <div>Lun</div><div>Mar</div><div>Mer</div><div>Gio</div>
+        <div>Ven</div><div>Sab</div><div>Dom</div>
+      </div>
+      <div class="griglia" id="griglia"></div>
+      <div class="dettaglio" id="dettaglio" style="display:none"></div>
+      <div class="legenda">
+        <span><i style="background:#2e7d32"></i>Orto</span>
+        <span><i style="background:#c2185b"></i>Patricio</span>
+        <span><i style="background:#0277bd"></i>Casa</span>
+        <span><i style="background:#1565c0"></i>Riposo (pioggia)</span>
+      </div>
     </div>
   </main>
 
   <script>
-    var NOMI = {
-      Casa: 'Piante in casa', Orto: 'Orto',
-      Patricio: 'Terrazza di Patricio', Riposo: "All'aperto: riposo (piove)"
-    };
-    var GIORNI = ['dom', 'lun', 'mar', 'mer', 'gio', 'ven', 'sab'];
+    var MESI = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio',
+      'agosto','settembre','ottobre','novembre','dicembre'];
+    var NOMI = { Casa:'Piante in casa', Orto:'Orto', Patricio:'Terrazza di Patricio',
+      Riposo:"All'aperto: riposo (piove)" };
+    var CL = { Orto:'orto', Patricio:'patr', Casa:'casa', Riposo:'rip' };
+
+    var DATI = null;      // risposta di getCalendario
+    var meseCorr = null;  // {y, m}  (m 0-11)
+    var selGiorno = null; // iso del giorno aperto
 
     function carica() {
-      google.script.run.withSuccessHandler(render).getStato();
+      google.script.run.withSuccessHandler(function (d) {
+        DATI = d;
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('app').style.display = 'block';
+        if (!meseCorr) {
+          var t = (d.today >= d.min || !d.min) ? d.today : d.min;
+          meseCorr = { y: +t.slice(0,4), m: +t.slice(5,7) - 1 };
+        }
+        render();
+      }).getCalendario();
     }
 
-    function render(s) {
-      document.getElementById('loader').style.display = 'none';
-      document.getElementById('contenuto').style.display = 'block';
-      document.getElementById('oggidata').textContent = formatLungo(s.today);
+    function pad(n){ return (n<10?'0':'')+n; }
+    function iso(y,m,d){ return y+'-'+pad(m+1)+'-'+pad(d); }
+    function meseKey(y,m){ return y+'-'+pad(m+1); }
+    function fuori(tipo){ return tipo==='Orto'||tipo==='Patricio'||tipo==='Riposo'; }
 
-      var o = document.getElementById('oggi');
-      o.innerHTML = '';
-      s.oggi.forEach(function (v) { o.appendChild(cardOggi(v, s.today)); });
+    function render() {
+      document.getElementById('nomemese').textContent =
+        MESI[meseCorr.m] + ' ' + meseCorr.y;
 
-      var p = document.getElementById('prossimi');
-      p.innerHTML = '';
-      s.prossimi.forEach(function (g) {
-        var fuori = g.voci.filter(function (v) { return v.tipo !== 'Casa'; });
-        var et = fuori.length ? fuori.map(function (v) { return NOMI[v.tipo]; }).join(', ')
-                              : 'solo casa';
-        var prob = fuori.length && fuori[0].prob !== '' ? ' · pioggia ' + fuori[0].prob + '%' : '';
-        var r = document.createElement('div');
-        r.className = 'riga';
-        r.innerHTML = '<span class="g">' + formatBreve(g.data) + '</span>' +
-                      '<span class="t">' + et + prob + '</span>';
-        p.appendChild(r);
-      });
+      // frecce limitate all'intervallo dei dati
+      var minK = DATI.min ? DATI.min.slice(0,7) : meseKey(meseCorr.y,meseCorr.m);
+      var maxK = DATI.max ? DATI.max.slice(0,7) : meseKey(meseCorr.y,meseCorr.m);
+      var curK = meseKey(meseCorr.y, meseCorr.m);
+      document.getElementById('prev').disabled = curK <= minK;
+      document.getElementById('next').disabled = curK >= maxK;
+
+      var y = meseCorr.y, m = meseCorr.m;
+      var primo = new Date(Date.UTC(y, m, 1));
+      var off = (primo.getUTCDay() + 6) % 7;            // Lun=0
+      var giorniMese = new Date(Date.UTC(y, m+1, 0)).getUTCDate();
+
+      var g = document.getElementById('griglia');
+      g.innerHTML = '';
+      for (var i = 0; i < off; i++) g.appendChild(cellaVuota());
+      for (var d = 1; d <= giorniMese; d++) g.appendChild(cella(iso(y,m,d), d));
+
+      if (selGiorno && selGiorno.slice(0,7) === curK) mostraDettaglio(selGiorno);
+      else { selGiorno = null; document.getElementById('dettaglio').style.display = 'none'; }
     }
 
-    function cardOggi(v, today) {
-      var d = document.createElement('div');
-      var riposo = v.tipo === 'Riposo';
-      d.className = 'card' + (v.fatto ? ' fatto' : '') + (riposo ? ' riposo' : '');
-      var meteo = v.prob === '' ? '' : 'Probabilità pioggia ' + v.prob + '%';
-      var info = document.createElement('div');
-      info.className = 'info';
-      info.innerHTML = '<div class="titolo">' + NOMI[v.tipo] + '</div>' +
-                       (meteo ? '<div class="meteo">' + meteo + '</div>' : '');
-      d.appendChild(info);
+    function cellaVuota(){ var c=document.createElement('div'); c.className='cella vuota'; return c; }
 
-      if (!riposo) {
-        var b = document.createElement('button');
-        b.className = v.fatto ? 'btn-annulla' : 'btn-fai';
-        b.textContent = v.fatto ? 'Annulla' : 'Fatto';
-        b.onclick = function () {
-          b.disabled = true; b.textContent = '…';
-          google.script.run.withSuccessHandler(function () { carica(); })
-            .segnaFatto(today, v.tipo, !v.fatto);
-        };
-        d.appendChild(b);
+    function cella(isoG, d) {
+      var c = document.createElement('div');
+      var ev = DATI.giorni[isoG];
+      if (!ev) { c.className = 'cella fuori'; c.innerHTML = '<div class="num">'+d+'</div>'; return c; }
+
+      c.className = 'cella';
+      if (isoG === DATI.today) c.className += ' oggi';
+      if (isoG === selGiorno) c.className += ' sel';
+
+      var f = ev.filter(function(e){ return fuori(e.tipo); })[0];
+      var casa = ev.filter(function(e){ return e.tipo==='Casa'; })[0];
+
+      var html = '<div class="num">'+d+'</div>';
+      if (f && f.prob !== '') html += '<div class="pioggia">'+f.prob+'%</div>';
+      html += '<div class="dots">';
+      if (casa) html += '<span class="dot '+(casa.fatto?'casa':'off')+'" title="casa"></span>';
+      html += '</div>';
+      if (f) {
+        var seg = f.fatto ? ' <span class="fattoseg">✓</span>' : '';
+        var et = f.tipo==='Riposo' ? 'Pioggia' : f.tipo;
+        html += '<div class="chip '+CL[f.tipo]+'">'+et+seg+'</div>';
       }
-      return d;
+      c.innerHTML = html;
+      c.onclick = function(){ selGiorno = isoG; render(); };
+      return c;
     }
 
-    function formatLungo(iso) {
-      var p = iso.split('-');
-      return formatBreve(iso) + ' ' + p[2] + '/' + p[1] + '/' + p[0];
+    function mostraDettaglio(isoG) {
+      var box = document.getElementById('dettaglio');
+      var ev = DATI.giorni[isoG] || [];
+      var dd = new Date(Date.parse(isoG));
+      var GG = ['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+      var titolo = GG[dd.getUTCDay()] + ' ' + (+isoG.slice(8,10)) + ' ' + MESI[+isoG.slice(5,7)-1];
+
+      // ordine: Casa prima, poi all'aperto
+      var ord = ev.slice().sort(function(a,b){ return (a.tipo==='Casa'?0:1)-(b.tipo==='Casa'?0:1); });
+      var h = '<h3>'+titolo+'</h3>';
+      ord.forEach(function(e){
+        var meteo = e.prob==='' ? '' : '<div class="m">Probabilità pioggia '+e.prob+'%</div>';
+        h += '<div class="voce '+CL[e.tipo]+'"><div><div class="t">'+NOMI[e.tipo]+'</div>'+meteo+'</div>';
+        if (e.tipo !== 'Riposo') {
+          h += '<button class="'+(e.fatto?'annulla':'')+'" '
+            + 'onclick="toggle(\''+isoG+'\',\''+e.tipo+'\','+(!e.fatto)+')">'
+            + (e.fatto?'Annulla':'Fatto')+'</button>';
+        }
+        h += '</div>';
+      });
+      box.innerHTML = h;
+      box.style.display = 'block';
     }
-    function formatBreve(iso) {
-      var d = new Date(Date.parse(iso));
-      return GIORNI[d.getUTCDay()] + ' ' + iso.slice(8, 10) + '/' + iso.slice(5, 7);
+
+    function toggle(isoG, tipo, val) {
+      google.script.run.withSuccessHandler(function(){ carica(); })
+        .segnaFatto(isoG, tipo, val);
     }
+
+    document.getElementById('prev').onclick = function(){
+      meseCorr.m--; if (meseCorr.m < 0){ meseCorr.m = 11; meseCorr.y--; } render();
+    };
+    document.getElementById('next').onclick = function(){
+      meseCorr.m++; if (meseCorr.m > 11){ meseCorr.m = 0; meseCorr.y++; } render();
+    };
 
     carica();
-    setInterval(carica, 30000); // presa diretta: ricarica ogni 30s
+    setInterval(carica, 30000); // presa diretta
   </script>
 </body>
 </html>

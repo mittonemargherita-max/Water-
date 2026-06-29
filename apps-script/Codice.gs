@@ -137,6 +137,26 @@ function getStato() {
   return { oggi: oggi, prossimi: giorni, today: today };
 }
 
+function getCalendario() {
+  var sh = foglio_();
+  if (sh.getLastRow() < 2) aggiornaBagnature();
+
+  var vals = sh.getLastRow() >= 2 ? sh.getRange(2, 1, sh.getLastRow() - 1, 5).getValues() : [];
+  var giorni = {}, date = [];
+  vals.forEach(function (r) {
+    var d = r[0];
+    if (!giorni[d]) { giorni[d] = []; date.push(d); }
+    giorni[d].push({ tipo: r[1], prob: r[2], mm: r[3], fatto: r[4] === true });
+  });
+  date.sort();
+  return {
+    today: isoTz_(new Date()),
+    giorni: giorni,
+    min: date.length ? date[0] : '',
+    max: date.length ? date[date.length - 1] : ''
+  };
+}
+
 function segnaFatto(data, tipo, valore) {
   var sh = foglio_();
   if (sh.getLastRow() < 2) return false;
