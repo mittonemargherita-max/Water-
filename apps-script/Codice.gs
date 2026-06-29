@@ -29,8 +29,8 @@ function foglio_() {
     sh = ss.insertSheet(SHEET_NAME);
     sh.getRange(1, 1, 1, 5).setValues([['Data', 'Tipo', 'Pioggia%', 'mm', 'Fatto']]);
     sh.setFrozenRows(1);
+    sh.getRange('A:A').setNumberFormat('@'); // Data come testo (solo alla creazione)
   }
-  sh.getRange('A:A').setNumberFormat('@'); // Data come testo, non come data
   return sh;
 }
 
@@ -115,6 +115,7 @@ function aggiornaBagnature() {
     sh.getRange(2, 1, out.length, 5).setValues(out);
     sh.getRange(2, 5, out.length, 1).insertCheckboxes();
   }
+  CacheService.getScriptCache().remove('cal'); // dati nuovi -> svuota cache
   return out.length;
 }
 
@@ -140,6 +141,10 @@ function getStato() {
 }
 
 function getCalendario() {
+  var cache = CacheService.getScriptCache();
+  var hit = cache.get('cal');
+  if (hit) return JSON.parse(hit);
+
   var sh = foglio_();
   if (sh.getLastRow() < 2) aggiornaBagnature();
 
@@ -151,12 +156,14 @@ function getCalendario() {
     giorni[d].push({ tipo: r[1], prob: r[2], mm: r[3], fatto: r[4] === true });
   });
   date.sort();
-  return {
+  var obj = {
     today: isoTz_(new Date()),
     giorni: giorni,
     min: date.length ? date[0] : '',
     max: date.length ? date[date.length - 1] : ''
   };
+  cache.put('cal', JSON.stringify(obj), 20); // cache 20s: letture veloci
+  return obj;
 }
 
 function segnaFatto(data, tipo, valore) {
@@ -166,6 +173,7 @@ function segnaFatto(data, tipo, valore) {
   for (var i = 0; i < vals.length; i++) {
     if (vals[i][0] === data && vals[i][1] === tipo) {
       sh.getRange(i + 2, 5).setValue(valore === true);
+      CacheService.getScriptCache().remove('cal'); // invalida la cache
       return true;
     }
   }

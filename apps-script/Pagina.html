@@ -172,7 +172,12 @@
     }
 
     function toggle(isoG, tipo, val) {
-      google.script.run.withSuccessHandler(function(){ carica(); }).segnaFatto(isoG, tipo, val);
+      // aggiornamento ottimistico: cambio subito a schermo, salvo in sottofondo
+      var ev = DATI.giorni[isoG] || [];
+      for (var i = 0; i < ev.length; i++) if (ev[i].tipo === tipo) ev[i].fatto = val;
+      render();
+      avviaPoll(); // rimanda il prossimo refresh, evita che "torni indietro"
+      google.script.run.segnaFatto(isoG, tipo, val);
     }
 
     document.getElementById('prev').onclick = function(){
@@ -182,8 +187,14 @@
       meseCorr.m++; if (meseCorr.m > 11){ meseCorr.m = 0; meseCorr.y++; } render();
     };
 
+    var pollTimer = null;
+    function avviaPoll() {
+      if (pollTimer) clearInterval(pollTimer);
+      pollTimer = setInterval(carica, 30000);
+    }
+
     carica();
-    setInterval(carica, 30000);
+    avviaPoll();
   </script>
 </body>
 </html>
